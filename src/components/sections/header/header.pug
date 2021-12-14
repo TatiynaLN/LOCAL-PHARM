@@ -1,0 +1,41 @@
+header.header 
+    .container
+        .header__top
+            select
+                option(selected) Санкт-Петербург
+                option(value="1") Москва
+                option(value="2") Тверь
+                option(value="3") Мурманск
+            include ./../../bem-blocks/nav/nav.pug
+            .contacts 
+                a(href="tel:84957305300") 8 495 730 53 00
+                span Круглосуточно
+            nav.nav.nav-login
+                ul.nav-menu.nav-login__menu(role="menu")
+                    li.nav-menu__item.nav-login__item(role="menuitem") Богдан
+                        ul.nav-menu__submenu.nav-login__submenu
+                            li(role="menuitem")
+                                a(href="#price") Настройки
+                            li(role="menuitem")
+                                a(href="#price") Истроия заказов
+                            li(role="menuitem")
+                                a(href="#price") Выход
+        .header__bottom
+            .logo
+                a(href="/"): img(src="./wp-content/themes/LOCAL-PHARM/assets/img/logo.png", alt="LOCAL-PHARM")
+            .header__bottom--menu
+                include ./../../bem-blocks/burger/burger.pug
+                nav.nav.nav-catalog
+                    ul(role="menu")
+                        li(role="menuitem")
+                            a(href="#price") товар 1
+                        li(role="menuitem")
+                            a(href="#price") товар 2
+                        li(role="menuitem")
+                            a(href="#price") товар 3
+            label.search
+                input.search__input(type="text" name="user-search" placeholder="Название или категория товара" required="required")
+                //- input.search__btn(type="submit" value="")
+                button.search__btn: img(src="./wp-content/themes/LOCAL-PHARM/assets/img/icons/loupe.svg")
+            button.btn__basket Корзина
+                span 2

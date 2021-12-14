@@ -1,0 +1,12 @@
+extends ./../layouts/main
+
+block variables
+    - let pageTitle = 'LOCAL-PHARM';
+
+block content
+    .wrap-feedback
+    .wrapper
+        include ./../components/sections/header/header.pug
+        include ./../components/sections/orders/orders.pug
+        include ./../components/sections/application/application.pug
+        include ./../components/sections/footer/footer.pug

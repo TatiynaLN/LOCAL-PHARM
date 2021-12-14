@@ -1,0 +1,88 @@
+.cmn-toggle-switch {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: max-content;
+    height: max-content;
+    font-size: 18px;
+    line-height: 22px;
+    @include Inter-Medium;
+    color: #ffffff;
+    appearance: none;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease-out;
+    background: linear-gradient(270.1deg, #8168f0 8.74%, #68f096 99.91%);
+    border-radius: 5px;
+    // @media (min-width: 1024px) {
+    //   display: none;
+    // }
+    &:hover,
+    &:focus {
+        outline: none;
+        background: linear-gradient(270.1deg, #68f096 8.74%, #8168f0 99.91%);
+        transition: background 0.3s ease-out;
+    }
+
+    span {
+        position: relative;
+        text-align: center;
+        display: block;
+        background: transparent;
+        padding: 14px 32px 14px 22px;
+        &::after {
+            position: absolute;
+            content: "";
+            right: 0;
+            top: 45%;
+            display: block;
+            width: 6px;
+            height: 6px;
+            border-top: 2px solid #fff;
+            border-right: 2px solid #fff;
+            transform: translate(-1.8rem, -50%) rotate(135deg);
+        }
+    }
+}
+
+.cmn-toggle-switch__htx {
+    background-color: transparent;
+    transition: all 1s ease-out;
+
+    span {
+        transition: background 0.3s ease-out;
+
+        &::before,
+        &::after {
+            transition-duration: 0.3s, 0.3s;
+        }
+
+        &::before {
+            transition-property: top, transform;
+        }
+
+        &::after {
+            transition-property: bottom, transform;
+        }
+    }
+}
+
+.cmn-toggle-switch__htx.active {
+    background: linear-gradient(270.1deg, #68f096 8.74%, #8168f0 99.91%);
+    transition: background 0.3s ease-out;
+    span {
+        &::after {
+            transition-delay: 0.3s;
+        }
+
+        &::before {
+            top: 0;
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            transform: translate(-1.8rem, 0%) rotate(-45deg);
+        }
+    }
+}

@@ -1,0 +1,186 @@
+.header {
+    &__top {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 1.4rem;
+        width: 100%;
+        padding: 2rem 0;
+        @media (min-width: 900px) {
+            gap: 2.4rem;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+        }
+    }
+    &__top--nav {
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 2.4rem;
+            margin-bottom: 0;
+        }
+    }
+    select {
+        outline: none;
+        border: none;
+        order: 0;
+    }
+    a {
+        color: #8168f0;
+    }
+    .contacts {
+        order: 3;
+        white-space: nowrap;
+        @media (min-width: 900px) {
+            order: 2;
+        }
+        &:hover,
+        &:focus {
+            a {
+                color: #8168f0;
+                transition: all 0.4s;
+            }
+        }
+        a {
+            font-size: 18px;
+            line-height: 22px;
+            color: #000000;
+            transition: all 0.4s;
+        }
+        span {
+            display: block;
+            font-size: 12px;
+            line-height: 15px;
+            color: #000000;
+            opacity: 0.5;
+        }
+    }
+}
+.header__bottom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 1.5rem;
+    @media (min-width: 900px) {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+    .logo {
+        min-width: 130px;
+        max-width: 130px;
+        margin-right: 2.6rem;
+        order: 0;
+        a {
+            width: 100%;
+            img {
+            }
+        }
+    }
+    .btn__basket,
+    .search,
+    input {
+        outline: none;
+        border: none;
+    }
+    .search {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+        order: 3;
+        @media (min-width: 900px) {
+            order: 2;
+        }
+    }
+    .search__input {
+        opacity: 0.4;
+        border: 1px solid #b3b7c5;
+        border-right: none;
+        box-sizing: border-box;
+        border-radius: 5px 0 0 5px;
+        width: 100%;
+        padding: 1.4rem 1.5rem;
+        font-size: 12px !important;
+        line-height: 22px;
+        color: #b3b7c5;
+        @include Inter-Medium;
+        @media (min-width: 900px) {
+            font-size: 18px !important;
+        }
+    }
+    .search__btn {
+        background: #8168f0;
+        border-radius: 0px 5px 5px 0px;
+        width: 57px;
+        height: 51.96px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background 0.4s;
+        &:hover,
+        &:focus {
+            background: #68f096;
+            transition: background 0.4s;
+        }
+    }
+}
+
+.btn__basket {
+    font-size: 0;
+    color: #8168f0;
+    background-color: transparent;
+    position: relative;
+    text-align: right;
+    width: 33px;
+    height: 33px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        width: 33px;
+        height: 33px;
+        background-image: url("../img/icons/shopping-bag.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @media (min-width: 900px) {
+            left: 0;
+        }
+    }
+    span {
+        padding: 0px 5px;
+        margin-left: 0px;
+        margin-top: 1rem;
+        border-radius: 10px;
+        color: #8168f0;
+        font-size: 18px;
+        line-height: 22px;
+        @include Inter-Medium;
+        @media (min-width: 900px) {
+            background: #8168f0;
+            color: #fff;
+            margin-left: 8px;
+            margin-top: 0rem;
+        }
+    }
+    order: 2;
+    @media (min-width: 900px) {
+        order: 3;
+        font-size: 18px;
+        line-height: 22px;
+        @include Inter-Medium;
+        min-width: 156px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}

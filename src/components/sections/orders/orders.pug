@@ -1,0 +1,113 @@
+section.orders
+    .container 
+        .orders-wrap
+            .sidebar
+                aside
+                    .wrap-img 
+                        //- img(src="", alt="Богдан")
+                    h2.user-name Богдан Игнатенков
+                    a.profil(href="/") Изменить профиль
+                    ul 
+                        li.item: a.item__link(href="/") Активировать сертификат
+                        li.item: a.item__link.active(href="/") Мои заказы 
+                            span.item__link--purple В доставке 
+                            span.item__link--number 1
+                        li.item: a.item__link(href="/") Избранное
+                        li.item: a.item__link(href="/") Помощь
+                        li.item: a.item__link(href="/") Обратная связь
+            .orders-wrap__wrap
+                h1.title Мои заказы
+                    span.title--number 3
+                .delivery.orders-wrap__wrap--blocks
+                    .delivery__head.orders-wrap__wrap--blocks-p 
+                        h2.block-title В доставке
+                            span.block-title__number №357765
+                        a.delivery__head-contact(href="tel:84957305300") Связаться с нами
+                        p.paid-for Оплачено картой
+                            span.paid-for__summa 1344 ₽  
+                    .delivery__body.orders-wrap__wrap--blocks-p 
+                        p 
+                            span.txt-top Адрес доставки
+                            | г. Санкт-Петербург, улица Нахимова, 10к1, 88 
+                        p 
+                            span.txt-top Примерное время доставки 
+                            | 23 марта 15:00 – 16:00
+                    .delivery__status
+                        .status.status-finished
+                            .status__img
+                                img(src="./wp-content/themes/LOCAL-PHARM/assets/img/icons/credit-card.svg", alt="Оплачено")
+                            span Оплачено
+                        .status.status-finished
+                            .status__img
+                                img(src="./wp-content/themes/LOCAL-PHARM/assets/img/icons/box.svg", alt="Собрано")
+                            span Собрано
+                        .status.status-finished
+                            .status__img
+                                img(src="./wp-content/themes/LOCAL-PHARM/assets/img/icons/figure.svg", alt="В доставке")
+                            span В доставке
+                        .status
+                            .status__img
+                                img(src="./wp-content/themes/LOCAL-PHARM/assets/img/icons/credit-card.svg", alt="Получено")
+                            span Получено
+                    .delivery__products
+                        .delivery__product
+                            .delivery__product--img
+                                img(src="./wp-content/themes/LOCAL-PHARM/assets/img/image6.png", alt="Феназепам")
+                            .delivery__product--txt 
+                                h3.delivery__product--name: a(href="") Феназепам, 50 таблеток
+                                ul.delivery__product--description
+                                    li: a(href="") Инструкция по применению
+                                    li: a(href="") Условия хранения
+                                p.delivery__product--recipe Курьер попросит рецепт
+                            p.delivery__product--price 542 ₽
+                        .delivery__product
+                            .delivery__product--img
+                                img(src="./wp-content/themes/LOCAL-PHARM/assets/img/image1.png", alt="Арбидол")
+                            .delivery__product--txt 
+                                h3.delivery__product--name: a(href="") Арбидол, капсулы 100 мг, 10 шт.
+                                ul.delivery__product--description
+                                    li: a(href="") Инструкция по применению
+                                    li: a(href="") Условия хранения
+                            p.delivery__product--price 282 ₽
+                        .delivery__product
+                            .delivery__product--img
+                                img(src="./wp-content/themes/LOCAL-PHARM/assets/img/image2.png", alt="Максилак")
+                            .delivery__product--txt 
+                                h3.delivery__product--name: a(href="") Максилак синбиотик капсулы, 10 шт.
+                                ul.delivery__product--description
+                                    li: a(href="") Инструкция по применению
+                                    li: a(href="") Условия хранения
+                            p.delivery__product--price 520 ₽
+                .finished
+                    .finished__head 
+                        h3 Доставлен 11 мая
+                            span №357765
+                        .finished__head--status 
+                            span Оплачено онлайн
+                            p.price 654  ₽ 
+                    .finished__body 
+                        .finished__body--img 
+                            img(src="./wp-content/themes/LOCAL-PHARM/assets/img/image3.png", alt="Флебодиа")
+                        .finished__body--img 
+                            img(src="./wp-content/themes/LOCAL-PHARM/assets/img/image4.png", alt="Феназепам")
+                        .finished__body--img 
+                            img(src="./wp-content/themes/LOCAL-PHARM/assets/img/image1.png", alt="Арбидол")
+                    button.finished__foot Все товары
+                .finished
+                    .finished__head 
+                        h3 Доставлен 25 марта 
+                            span №357632
+                        .finished__head--status 
+                            span Оплачено наличными
+                            p.price 778  ₽ 
+                    .finished__body 
+                        .finished__body--img 
+                            img(src="./wp-content/themes/LOCAL-PHARM/assets/img/image5.png", alt="Креон")
+                        .finished__body--img 
+                            img(src="./wp-content/themes/LOCAL-PHARM/assets/img/image4.png", alt="Феназепам")
+                        .finished__body--img 
+                            img(src="./wp-content/themes/LOCAL-PHARM/assets/img/image3.png", alt="Флебодиа")
+                        .finished__body--img 
+                            img(src="./wp-content/themes/LOCAL-PHARM/assets/img/image1.png", alt="Арбидол")
+                    button.finished__foot Все товары
+                    

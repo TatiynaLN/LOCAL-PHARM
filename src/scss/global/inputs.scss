@@ -1,0 +1,16 @@
+select {
+    @include Inter-Regular;
+    font-family: "Inter-Regular" !important;
+    font-size: 1.2rem !important;
+    line-height: 19px;
+    color: #8168f0;
+    @media (min-width: 768px) {
+        font-size: 16px !important;
+    }
+}
+header select {
+    font-size: 1.2rem !important;
+    @media (min-width: 768px) {
+        font-size: 16px !important;
+    }
+}
